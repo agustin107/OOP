@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ Metodo\ de\ entrada\ al\ programa\r\n\ \r\n\ @return\ \ La\ suma,\ resta,\ multiplicacion,\ division\ y\ resto\ de\ a\ y\ b\r\n
+numComments=1

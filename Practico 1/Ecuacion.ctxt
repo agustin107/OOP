@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ Metodo\ de\ entrada\ al\ programa\r\n\ \r\n\ @param\ \ \ a\ \ \ Coeficiente\r\n\ @param\ \ \ b\ \ \ Coeficiente\r\n\ @param\ \ \ c\ \ \ Coeficiente\r\n\ @return\ \ \ \ \ Las\ raices\ reales\ la\ ecuacion\r\n
+numComments=1

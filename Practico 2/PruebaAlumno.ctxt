@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ Entrada\ al\ programa\ para\ probar\ y\ ejecutar\ la\ clase\ Alumno\r\n\ \r\n\ @param\ \ args\ arreglo\ de\ string\ que\ contiene\ LU,\ nombre\ y\ apellido\r\n
+numComments=1

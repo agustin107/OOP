@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment0.text=\r\n\ Metodo\ de\ entrada\ al\ programa\r\n\ \r\n\ @param\ \ \ a\ \ \ El\ parametro\ a\ es\ un\ lado\ del\ triangulo\r\n\ @param\ \ \ b\ \ \ El\ parametro\ b\ es\ un\ lado\ del\ triangulo\r\n\ @param\ \ \ c\ \ \ El\ parametro\ c\ es\ un\ lado\ del\ triangulo\r\n\ @return\ \ \ \ \ \ Devuelve\ el\ semiperimetro\ y\ area\ del\ triangulo\r\n
+numComments=1
