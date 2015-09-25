@@ -3,110 +3,69 @@
  * Clase Punto
  * 
  * @author Agustin N. R. Ramirez
- * @version 1.0
+ * @version Septiembre 2015
  */
 public class Punto
-{
-    // atributos
+{  
     private double x;
     private double y;
-
     /**
-     * Constructor de la clase
-     */
-    public Punto() {
-        // inicializo los atributos
+    * Constructor en el cual se incializan los atributos x e y en 0 para que los puntos esten en el origen del eje de coordenadas
+    */
+    public Punto(){
         this.setX(0);
         this.setY(0);
     }
     
-    /**
-     * Constructor de la clase
-     * 
-     * @param   x, y
-     */
-    public Punto(double p_x, double p_y) {
-        this.setX(p_x);
-        this.setY(p_y);
+    public Punto(double p_x, double p_y){
+       this.setX(p_x);
+       this.setY(p_y);
     }
-    
-    /**
-     * Devuelve x
-     * 
-     * @return  x
-     */
-    public double getX() {
-        return this.x;
-    }
-    
-    /**
-     * Establece x
-     * 
-     * @param   x
-     */
-    private void setX(double p_x) {
+    private void setX(double p_x){
         this.x = p_x;
     }
-    
-    /**
-     * Devuelve y
-     * 
-     * @return  y
-     */
-    public double getY() {
-        return this.y;
-    }
-    
-    /**
-     * Establece y
-     * 
-     * @return  y
-     */
-    private void setY(double p_y) {
+    private void setY(double p_y){
         this.y = p_y;
     }
+    public double getX(){
+        return this.x;
+    }
+    public double getY(){
+        return this.y;
+    }
+    /**
+    * Metodo que produce un desplazamiento del punto al sumarle a sus coordenadas x e y, el valor que contienen las variables dx y dy que representan el desplazamiento 
+    * que realiza cada punto 
+    * @param variables del tipo double dx y dy
+    */
+    public void desplazar(double p_dx,double p_dy){
+        this.setX(getX() + p_dx);
+        this.setY(getY() + p_dy);
+    }
     
     /**
-     * Calcula la distancia entre el objeto actual y otro que recibe por parametro
-     * 
-     * @param   Punto
-     * @return  distancia
-     */
-    public double distanciaA(Punto p_ptoDistante) {
-        double distancia;
-        double cuadradoDeCateto1 = (p_ptoDistante.getX() - this.getX()) * (p_ptoDistante.getX() - this.getX());
-        double cuadradoDeCateto2 = (p_ptoDistante.getY() - this.getY()) * (p_ptoDistante.getY() - this.getY());
-        
-        distancia = Math.sqrt(cuadradoDeCateto1 + cuadradoDeCateto2);
+    * Metodo que nos devuelve una leyenda con las coordenadas del punto en el sistema de coordenadas
+    * 
+    * 
+    * @return una leyenda de tipo String
+    */
+    public String coordenadas(){
+        return ("(" + this.getX() + "," + this.getY() + ")");
+    }
+    /**
+    * Metodo imprime la leyenda que nos indica el valor del punto X y el valor del punto Y
+    */
+    public void mostrar(){
+        System.out.println("Punto" + " " + "X: " + this.getX() + " " + "Y: " + this.getY());
+    }
+    public double distanciaA(Punto p_ptoDistante){  
+        double distancia = (Math.sqrt(Math.pow((p_ptoDistante.getX() - this.getX()), 2)) + (Math.pow ((p_ptoDistante.getY() - this.getY()), 2)));
         return distancia;
     }
-    
-    /**
-     * Desplaza x e y, sumando nuevos valores
-     * 
-     * @param   desplazamiento de x, desplazamiento de y
-     */
-    public void desplazar(double p_dx, double p_dy) {
-        this.setX(this.getX() + p_dx);
-        this.setY(this.getY() + p_dy);
-    }
-    
-    /**
-     * Muestra en pantalla x e y
-     */
-    public void mostrar() {
-        System.out.println("Punto. X: " + this.getX() + ", Y: " + this.getY());
-    }
-    
-    /**
-     * Devuelve las coordenadas de x e y
-     * 
-     * @return  x, y
-     */
-    public String coordenadas() {
-        String cadena;
-        
-        cadena = "(" + this.getX() + ", " + this.getY() + ")";
-        return cadena;
-    }
 }
+
+   
+        
+    
+
+   

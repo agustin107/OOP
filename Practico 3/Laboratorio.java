@@ -1,80 +1,71 @@
-
 /**
  * Clase Laboratorio
  * 
  * @author Agustin N. R. Ramirez
- * @version 1.0
+ * @version Septiembre 2015
  */
 public class Laboratorio
 {
-    // atributos
     private String nombre;
     private String domicilio;
     private String telefono;
     private int compraMinima;
     private int diaEntrega;
-
     /**
-     * Constructor de la clase
-     */
-    public Laboratorio(String p_nombre, String p_domicilio, String p_telefono) {
-        // inicializo los atributos
-        this.setNombre(p_nombre);
-        this.setDomicilio(p_domicilio);
-        this.setTelefono(p_telefono);
+    * Constructor de la clase Laboratorio. 
+    * Se inicializan en cero los setCompraMinima y setDiaEntrega.
+    * @param p_nombre define el nombre del laboratorio.
+    * @param p_domicilio define el domicilio del laboratorio.
+    * @param p_telefono define el teléfono del laboratorio.
+    */
+    public Laboratorio(String p_nombre,String p_domicilio,String p_telefono){
+    this.setNombre(p_nombre);
+    this.setDomicilio(p_domicilio);
+    this.setTelefono(p_telefono);
     }
-
-    public Laboratorio(String p_nombre, String p_domicilio) {
-        this.setNombre(p_nombre);
-        this.setDomicilio(p_domicilio);
+    public Laboratorio(String p_nombre, String p_domicilio){
+    this.setNombre(p_nombre);
+    this.setDomicilio(p_domicilio);
+    this.setTelefono(null);
     }
-    
-    public Laboratorio(String p_nombre) {
-        this.setNombre(p_nombre);
+    public Laboratorio(String p_nombre){
+    this.setNombre(p_nombre);
+    this.setDomicilio(null);
+    this.setTelefono(null);
     }
-    
-    public String getNombre() {
-        return this.nombre;
-    }
-    
-    private void setNombre(String p_nombre) {
-        this.nombre = p_nombre;
-    }
-    
-    public String getDomicilio() {
-        return this.domicilio;
-    }
-    
-    private void setDomicilio(String p_domicilio) {
-        this.domicilio = p_domicilio;
-    }
-    
-    public String getTelefono() {
-        return this.telefono;
-    }
-    
-    private void setTelefono(String p_telefono) {
-        this.telefono = p_telefono;
-    }
-    
-    public int getCompraMinima() {
-        return this.compraMinima;
-    }
-    
-    private void setCompraMinima(int p_compraMinima) {
+    public void setCompraMinima (int p_compraMinima){
         this.compraMinima = p_compraMinima;
     }
-    
-    public int getDiaEntrega() {
-        return this.diaEntrega;
+    public int getcompraMinima (){
+        return this.compraMinima;
     }
-    
-    private void setDiaEntrega(int p_diaEntrega) {
+    public void setDiaEntrega (int p_diaEntrega){
         this.diaEntrega = p_diaEntrega;
     }
-    
-    public void mostrar() {
-        System.out.println("Laboratorio: " + this.getNombre());
-        System.out.println("Domicilio: " + this.getDomicilio() + " - Telefono: " + this.getTelefono());
+    public int getdiaEntrega (){
+        return this.diaEntrega;
+    }
+    public void setNombre (String p_nombre){
+        this.nombre = p_nombre;
+    }
+    public void setDomicilio (String p_domicilio){
+        this.domicilio = p_domicilio;
+    }
+    public void setTelefono (String p_telefono){
+        this.telefono = p_telefono;
+    }
+    public String getnombre (){
+        return this.nombre;
+    }
+    public String getdomicilio (){
+        return this.domicilio;
+    }
+    public String gettelefono(){
+        return this.telefono;
+    }
+    public void mostrar () {
+        System.out.println ("Laboratorio: " + this.getnombre());
+        System.out.println ("Domicilio: " + this.getdomicilio());
+        System.out.println ("Telefono: " + this.gettelefono());
     }
 }

@@ -3,143 +3,106 @@
  * Clase Rectangulo
  * 
  * @author Agustin N. R. Ramirez
- * @version 1.0
+ * @version Septiembre 2015
  */
 public class Rectangulo
-{
-    // atributos
+{ 
     private Punto origen;
     private double ancho;
     private double alto;
-
-    /**
-     * Constructor de la clase
-     * 
-     * @param   origen, ancho y alto
-     */
-    public Rectangulo(Punto p_origen, double p_ancho, double p_alto)
-    {
-        // inicializo los atributos
+    
+    public Rectangulo(Punto p_origen, double p_ancho, double p_alto){
         this.setOrigen(p_origen);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
-
-    /**
-     * Constructor de la clase
-     * 
-     * @param   ancho y alto
-     */
-    public Rectangulo(double p_ancho, double p_alto) {
+    public Rectangulo(double p_ancho, double p_alto){
+        this.setOrigen(new Punto());
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
-    
-    /**
-     * Devuelve el origen
-     * 
-     * @return  origen
-     */
-    public Punto getOrigen() {
-        return this.origen;
-    }
-    
-    /**
-     * Establece el origen
-     * 
-     * @param   origen
-     */
-    private void setOrigen(Punto p_origen) {
-        this.origen = p_origen;
-    }
-    
-    /**
-     * Devuelve el ancho
-     * 
-     * @return  ancho
-     */
-    public double getAncho() {
-        return this.ancho;
-    }
-    
-    /**
-     * Establece el ancho
-     * 
-     * @param   ancho
-     */
-    private void setAncho(double p_ancho) {
+    private void setAncho(double p_ancho){
         this.ancho = p_ancho;
     }
-    
-    /**
-     * Devuelve el alto
-     * 
-     * @return  alto
-     */
-    public double getAlto() {
-        return this.alto;
-    }
-    
-    /**
-     * Establece el alto
-     * 
-     * @param   alto
-     */
-    private void setAlto(double p_alto) {
+    private void setAlto(double p_alto){
         this.alto = p_alto;
     }
-    
-    /**
-     * Desplaza, cambiando su origen a otra posicion
-     * 
-     * @param   desplazo de x y desplazo de y
-     */
-    public void desplazar(double p_dx, double p_dy) {
-        
+    private void setOrigen(Punto p_origen){
+        this.origen = p_origen;
     }
-    
-    /**
-     * Muestra las caracteristicas
-     */
-    public void caracteristicas() {
-        
+    public double getAncho(){
+        return this.ancho;
     }
-    
-    /**
-     * Calcula el perimetro
-     * 
-     * @return  perimetro
-     */
-    public double perimetro() {
-        
+    public double getAlto(){
+        return this.alto;
     }
-    
-    /**
-     * Calcula la superficie
-     * 
-     * @return  superficie
-     */
-    public double superficie() {
-        
+    public Punto getOrigen(){
+        return this.origen;
     }
-    
     /**
-     * Calcula la distancia entre el mismo y otro rectangulo
-     * 
-     * @param   rectangulo
-     * @return  distancia entre ambos rectangulo
-     */
-    public double distanciaA(Rectangulo otroRectangulo) {
-        
+    * Metodo que produce un desplazamiento del punto al sumarle a sus coordenadas x e y, el valor que contienen las variables dx y dy que representan el desplazamiento 
+    * que realiza cada punto 
+    * @param variables del tipo double dx y dy
+    */
+    public void desplazar(double p_dx,double p_dy){
+        this.getOrigen().desplazar(p_dx, p_dy);
     }
+    public void caracteristicas(){
+        System.out.println ("Rectangulo");
+        System.out.println("Origen: " + this.getOrigen().coordenadas() + " - " + "Alto: " + this.getAlto() +" - " + "Ancho: " + this.getAncho());
+        System.out.println("Superficie: " + this.superficie() + " " + "Perimetro: " + this.perimetro());
+    }
+    public double superficie(){
+        double superficie = this.getAncho() * this.getAlto();
+        return superficie;
+    }
+    public double perimetro(){
+        double perimetro = ((2 * this.getAncho()) + (2 * this.getAlto()));
+        return perimetro;
+    }
+    public Rectangulo elMayor(Rectangulo otroRectangulo){
     
-    /**
-     * Calcula el mayor entre dos rectangulo
-     * 
-     * @param   rectangulo
-     * @return  rectangulo
-     */
-    public Rectangulo elMayor(Rectangulo otroRectangulo) {
-        
+        if (this.superficie() > otroRectangulo.superficie()){
+            return this;
+        }
+        else{
+            return otroRectangulo;
+        }
     }
+    public double distanciaA (Rectangulo otroRectangulo){
+        Punto a = this.getOrigen();
+        Punto b = otroRectangulo.getOrigen();  
+        return a.distanciaA(b);
+    }  
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 

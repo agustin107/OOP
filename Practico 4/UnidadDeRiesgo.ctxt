@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=p_agricultor\ p_cultivo\ p_fechaCosecha
+comment0.target=UnidadDeRiesgo(java.lang.String,\ java.lang.String,\ java.util.Calendar)
+comment1.params=p_agricultor
+comment1.target=void\ setAgricultor(java.lang.String)
+comment2.params=p_cultivo
+comment2.target=void\ setCultivo(java.lang.String)
+comment3.params=p_fechaCosecha
+comment3.target=void\ setFechaCosecha(java.util.Calendar)
+comment4.params=
+comment4.target=java.lang.String\ getAgricultor()
+comment5.params=
+comment5.target=java.lang.String\ getCultivo()
+comment6.params=
+comment6.target=java.util.Calendar\ getFechaCosecha()
+comment7.params=
+comment7.target=void\ mostrarDetalle()
+numComments=8

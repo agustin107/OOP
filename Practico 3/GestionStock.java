@@ -1,26 +1,25 @@
-
+import java.util.Scanner;
 /**
- * Clase GestionStock
- * 
- * @author Agustin N. R. Ramirez
- * @see Producto
- * @version 1.0
+ * Clase ejecutable GestionStock
+ * en la clase se instancia un objeto de tipo Producto
  */
 public class GestionStock
-{
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public static void main(String[] args)
-    {
-        int codigo = 1234;
-        String rubro = "Perfumeria";
-        String descripcion = "Jabón Deluxe";
-        double costo = 5.25;
-        Laboratorio laboratorio = new Laboratorio("Colgate S.A", "Scalabrini Ortiz 5524", "54-11 -4239-8447");
-        Producto producto = new Producto(codigo, rubro, descripcion, costo, laboratorio);
+{  
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in); 
+        Laboratorio colgate = new Laboratorio("Colgate S A", "Scalabrini Ortiz 5524", "54-11-4239-8447");
+        Producto jabon = new Producto(1249,"limpieza","jabon deluxe",10,colgate);
+        jabon.ajuste(1500);
+        jabon.mostrar();
+        jabon.ajuste(-200);
+        
+        System.out.println("Desea conocer Precio de Lista y Precio Contado: s o n");
+        char resp = teclado.next().charAt(0);
+        if(resp == 's')
+        {
+            System.out.println(jabon.mostrarLinea());
+        }
+        
+        jabon.mostrar();
     }
 }

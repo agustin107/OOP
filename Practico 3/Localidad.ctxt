@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=p_nombre\ p_provincia
+comment0.target=Localidad(java.lang.String,\ java.lang.String)
+comment0.text=\n\ Constructor\ de\ la\ clase\ Localidad.\n
+comment1.params=p_nombre
+comment1.target=void\ setNombre(java.lang.String)
+comment1.text=\ Setter\ Nombre.\n\ @param\ p_nombre\ de\ tipo\ String.\n
+comment2.params=p_provincia
+comment2.target=void\ setProvincia(java.lang.String)
+comment2.text=\ Setter\ Provincia.\n\ @param\ p_provincia\ de\ tipo\ String.\ \n
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment3.text=\ Getter\ Nombre.\n\ @return\ nombre\ de\ tipo\ String.\n
+comment4.params=
+comment4.target=java.lang.String\ getProvincia()
+comment4.text=\ Getter\ Provincia.\n\ @return\ provincia\ de\ tipo\ String.\n
+comment5.params=
+comment5.target=void\ mostrar()
+comment5.text=\n\ Metodo\ mostrar()\ de\ la\ clase\ Localidad.\n\ Muestra\ por\ pantalla\ el\ nombre\ de\ la\ localidad\ y\ la\ provincia.\n
+numComments=6

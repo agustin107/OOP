@@ -1,6 +1,6 @@
 Class documentation
 <---- javadoc command: ---->
-C:\Program Files\BlueJ\jdk\bin\javadoc.exe
+C:\Program Files\Java\jdk1.8.0_11\bin\javadoc.exe
 -author
 -version
 -nodeprecated
@@ -12,56 +12,30 @@ C:\Program Files\BlueJ\jdk\bin\javadoc.exe
 -source
 1.8
 -classpath
-C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3
 -d
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc
+C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc
 -encoding
 UTF-8
 -charset
 UTF-8
 -docletpath
-C:\Program Files\BlueJ\lib\bjdoclet.jar
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
 -doclet
 bluej.doclet.doclets.formats.html.HtmlDoclet
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java
+C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\Producto.java
 <---- end of javadoc command ---->
-Loading source file C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java...
+Loading source file C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\Producto.java...
 Constructing Javadoc information...
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java:15: error: cannot find symbol
-    private Calendar fechaIngreso;
-            ^
-  symbol:   class Calendar
-  location: class EmpleadoConJefe
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java:21: error: cannot find symbol
-    public EmpleadoConJefe(long p_cuil, String p_apellido, String p_nombre, double p_importe, Calendar p_fechaIngreso, EmpleadoConJefe p_jefe)
-                                                                                              ^
-  symbol:   class Calendar
-  location: class EmpleadoConJefe
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java:35: error: cannot find symbol
-    public EmpleadoConJefe(long p_cuil, String p_apellido, String p_nombre, double p_importe, Calendar p_fecha) {
-                                                                                              ^
-  symbol:   class Calendar
-  location: class EmpleadoConJefe
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java:129: error: cannot find symbol
-    public Calendar getFechaIngreso() {
-           ^
-  symbol:   class Calendar
-  location: class EmpleadoConJefe
-C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\EmpleadoConJefe.java:136: error: cannot find symbol
-    private void setFechaIngreso(Calendar p_fechaIngreso) {
-                                 ^
-  symbol:   class Calendar
-  location: class EmpleadoConJefe
-Standard Doclet version 1.8.0_40
+Standard Doclet version 1.8.0_11
 Building tree for all the packages and classes...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\EmpleadoConJefe.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\package-frame.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\package-summary.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\constant-values.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\Producto.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\package-frame.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\package-summary.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\constant-values.html...
 Building index for all the packages and classes...
 Building index for all classes...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\allclasses-frame.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\allclasses-noframe.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\index.html...
-Generating C:\Users\usuario\Documents\Facultad\POO\Laboratorio\Practico 3\doc\stylesheet.css...
-5 warnings
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\allclasses-frame.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\allclasses-noframe.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\index.html...
+Generating C:\Users\HERMIDA\Desktop\POO\Trabajos Practicos\TP3\doc\stylesheet.css...

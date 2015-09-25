@@ -1,127 +1,84 @@
 
 /**
- * Clase CuentaBancaria
+ * Write a description of class CuentaBancaria here.
  * 
  * @author Agustin N. R. Ramirez
- * @version 1.0
+ * @version Septiembre 2015
  */
 public class CuentaBancaria
-{
-    // atributos
+{ 
     private int nroCuenta;
     private double saldo;
     private Persona titular;
-
-    /**
-     * Constructor de la clase
-     * 
-     * @param   nro de cuenta y titular
-     */
-    public CuentaBancaria(int p_nroCuenta, Persona p_titular)
-    {
-        // inicializo los atributos
+    
+    public CuentaBancaria(int p_nroCuenta, Persona p_titular){
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
+        this.setSaldo(0);
     }
-
-    /**
-     * Constructor de la clase
-     * 
-     * @param   nro de cuenta, titular y saldo
-     */
-    public CuentaBancaria(int p_nroCuenta, Persona p_titular, double p_saldo) {
+    public CuentaBancaria(int p_nroCuenta, Persona p_titular, double p_saldo ){
         this.setNroCuenta(p_nroCuenta);
         this.setTitular(p_titular);
         this.setSaldo(p_saldo);
     }
-    
-    /**
-     * Devuelve el numero de cuenta
-     * 
-     * @return  numero de cuenta
-     */
-    public int getNroCuenta() {
-        return this.nroCuenta;
-    }
-    
-    /**
-     * Establece el numero de cuenta
-     * 
-     * @param   numero de cuenta
-     */
-    private void setNroCuenta(int p_nroCuenta) {
+    private void setNroCuenta(int p_nroCuenta){
         this.nroCuenta = p_nroCuenta;
     }
-    
-    /**
-     * Devuelve el saldo
-     * 
-     * @return  saldo
-     */
-    public double getSaldo() {
-        return this.saldo;
-    }
-    
-    /**
-     * Establece el saldo
-     * 
-     * @param   saldo
-     */
-    private void setSaldo(double p_saldo) {
-        this.saldo = p_saldo;
-    }
-    
-    /**
-     * Devuelve el titular
-     * 
-     * @return  titular
-     */
-    public Persona getPersona() {
-        return this.titular;
-    }
-    
-    /**
-     * Establece el titular
-     * 
-     * @param   titular
-     */
-    private void setTitular(Persona p_titular) {
+    private void setTitular(Persona p_titular){
         this.titular = p_titular;
     }
-    
-    /**
-     * Aumenta el saldo
-     * 
-     * @param   importe
-     * @return  saldo actual
-     */
-    public double depositar(double p_importe) {
-        
+    private void setSaldo (double p_saldo){
+        this.saldo = p_saldo;
     }
-    
-    /**
-     * Disminuye el saldo
-     * 
-     * @param   importe
-     * @return  saldo actual
-     */
-    public double extraer(double p_importe) {
-        
+    public int getNroCuenta(){
+        return this.nroCuenta;
     }
-    
-    /**
-     * Muestra por pantalla los datos del titular y saldo
-     */
-    public void mostrar() {
-        
+    public double getSaldo(){
+        return this.saldo;
     }
-    
-    /**
-     * Devuelve el numero de cuenta, titular y saldo en una sola linea
-     * 
-     * @return  numero de cuenta, titular y saldo
-     */
-    public String toString() {
-        
+    public Persona getTitular(){
+        return this.titular;
+    }
+    public double depositar (double p_importe){
+        double saldo = (this.getSaldo() + p_importe);
+        return saldo;
+    }
+    public double extraer (double p_importe){
+        double saldo = (this.getSaldo() - p_importe);
+        return saldo;
+    }
+    public void mostrar(){
+        System.out.println(" - Cuenta Bancaria - ");
+        System.out.println("Titular: " +this.getTitular().nomYApe()+"  "+this.getTitular().edad()+"Años");
+        System.out.println("Saldo: " + this.getSaldo());
+    }
+    public String toString(){
+        String toString = this.getNroCuenta() + this.getTitular().nomYApe() + this.getSaldo();
+        return toString;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
